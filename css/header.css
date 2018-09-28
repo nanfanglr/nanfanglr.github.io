@@ -1,0 +1,90 @@
+@charset "UTF-8";
+ul {
+    list-style: none;
+}
+
+div.content {
+    width: 1000px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+
+/*************header部分**************/
+header {
+    border: 0;
+}
+
+div.logo {
+    border-radius: 10px;
+    text-align: center;
+    line-height: 27px;
+    color: white;
+    float: left;
+    width: 152px;
+    height: 27px;
+    margin-top: 10px;
+    background-color: red;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 15px;
+    color: #5c5c5c;
+}
+
+a.android, a.ios {
+    width: 66px;
+    height: 26px;
+    font-size: 10pt;
+    background-color: #959595;
+    margin-top: 12px;
+    color: white;
+    line-height: 26px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a.android {
+    background-color: #F66268;
+    margin-right: 10px;
+}
+
+header ul a.current, header ul a:not([class]):hover {
+    border-bottom: 3px solid red;
+}
+
+#android_code {
+    width: 180px;
+    height: 210px;
+    background-color: #eee;
+    position: absolute;
+    top: 48px;
+    text-align: center;
+    line-height: 210px;
+    display: none;
+}
+
+#android:hover div {
+    display: block;
+}
+
+
+
+
+
+
+
+
+

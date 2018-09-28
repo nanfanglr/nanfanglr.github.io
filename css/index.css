@@ -1,0 +1,27 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***************总体设置*********************/
+
+body {
+    font-size: 12pt;
+    color: #666;
+    font-family: "微软雅黑", Arial;
+}
+
+/*header, footer, section {*/
+    /*width: 100%;*/
+    /*border: 1px solid black;*/
+/*}*/
+
+header {
+    height: 50px;
+}
+
+footer {
+    clear: both;
+    height: 170px;
+}
