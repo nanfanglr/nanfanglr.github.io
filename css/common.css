@@ -3,6 +3,7 @@ body {
     padding: 0 10px;
     margin: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 ul {
@@ -11,12 +12,17 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*justify-content: center;*/
-    align-items: center;
+}
+
+@media all and (min-width: 321px) and (max-width: 500px) {
+    ul {
+        justify-content: center;
+    }
 }
 
 li {
     list-style: none;
+
 }
 
 ul > li {
