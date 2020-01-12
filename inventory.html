@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" manifest="demo_html.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>搜于特盘点APP常见问题</title>
+</head>
+
+<style>
+
+</style>
+
+<script>
+    var data = [
+        {"url": "introduce.html", "title": "盘点机使用说明"}
+        , {"url": "cleanad.html", "title": "盘点机弹出广告处理(即卸载盘点机多余应用)"}
+        , {"url": "cleanapp.html", "title": "盘点机点击无反应(即卸载盘点机360相关应用)"}
+        , {"url": "resetdb.html", "title": "扫描新旧条码或部分吊牌条码提示“没有该条码任何信息"}
+        , {"url": "reboot.html", "title": "扫描吊牌条码，有红光发出，但无反应(即拆电池重启)"}
+        , {"url": "startiscan.html", "title": "扫描吊牌条码，无红光发出(即启动iScan)"}
+        , {"url": "updateapp.html", "title": "盘点APP无法更新以及更新失败"}
+        , {"url": "upload.html", "title": "盘点APP无法上传数据"}
+        , {"url": "phone.html", "title": "登录门店时提示手机号不正确"}
+        , {"url": "test.html", "title": "iScan扫描测试"}
+        , {"url": "resetpda.html", "title": "盘点机重置系统"}
+        , {"url": "install.html", "title": "安装搜于特盘点APP"}
+        , {"url": "installiscan.html", "title": "安装iScan"}
+        , {"url": "time.html", "title": "盘点机设置系统时间"}
+        , {"url": "wifi.html", "title": "盘点机连接WiFi"}
+        , {"url": "nolaunch.html", "title": "盘点机无法启动"}
+        , {"url": "scan.html", "title": "存货盘点业务流程"}
+        , {"url": "return.html", "title": "退货盘点业务流程"}
+    ];
+    window.onload = function () {
+        var list = document.getElementById('list');
+        //遍历data数组中每个商品对象
+        for (var i = 0; i < data.length; i++) {
+            var li = document.createElement('li');
+            var h4 = document.createElement('h4');
+            var a = document.createElement('a');
+            a.innerHTML = data[i].title;
+            a.href = data[i].url;
+            h4.appendChild(a);
+            li.appendChild(h4);
+            list.appendChild(li);
+        }
+    }
+</script>
+<body>
+<h2 align='center'>搜于特盘点APP常见问题及操作</h2>
+<ol id="list"></ol>
+</body>
+</html>
